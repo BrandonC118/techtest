@@ -18,7 +18,7 @@ spec:
       containers:
       - name: techtest
         image: watermellody/getground-techtest:v1.0.0
-	      ports:
+        ports:
         - containerPort: 443
         env:
           - name: PORT
