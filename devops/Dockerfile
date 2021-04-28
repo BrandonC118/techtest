@@ -1,11 +1,11 @@
 FROM golang:1.14
 
-WORKDIR .
+WORKDIR ./techtask
 
 COPY . . 
 
-RUN go install .
+RUN go build -o ./out/devops-techtask .
 
 EXPOSE 443
 
-CMD ["techtest"]
+CMD ["./out/devops-techtask"]

@@ -37,7 +37,7 @@ func main() {
 		Password: c.RedisPassword,
 		DB:       c.RedisDb,
 	})
-
+        log.Println(r)
 	router := gin.Default()
 
 	router.GET("/id/:id", func(c *gin.Context) {
