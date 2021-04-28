@@ -10,7 +10,7 @@ spec:
   rules:
     - http:
         paths:
-	  - path: /
-	    backend:
-	      serviceName: getground-service
-	      servicePort: 80
+	        - path: /
+            backend:
+              serviceName: getground-service
+              servicePort: 80

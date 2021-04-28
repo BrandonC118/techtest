@@ -18,16 +18,16 @@ spec:
       containers:
       - name: techtest
         image: watermellody/getground-techtest:v1.0.0
-	ports:
-	- containerPort: 443
-	env:
-	- name: PORT
-	  value: "443"
-	- name: REDIS_HOST
-	  value: ""
-	- name: REDIS_PORT
-	  value: "6379"
-	- name: REDIS_PASSWORD
-	  value: ""
-	- name: REDIS_DB
-	  value: "0"
+	      ports:
+        - containerPort: 443
+        env:
+          - name: PORT
+            value: "443"
+          - name: REDIS_HOST
+            value: ""
+          - name: REDIS_PORT
+            value: "6379"
+          - name: REDIS_PASSWORD
+            value: ""
+          - name: REDIS_DB
+            value: "0"
