@@ -53,7 +53,7 @@ Select "Add Key" and create a "JSON" key - keep this JSON file for later use
 4. Move into /devops/solution/terraform/ and change some variables found in terraform.tfvars specfically "credentials" where the value should match your Service Account key file name.
 5. When ready to build - run "terraform init" -> "terraform plan" -> "terraform apply" - and this should build out all the infrastructure if pre-requisites have been followed. KEEP A NOTE OF THE OUTPUT FROM THE TERRAFORM RUN
 
-## Example of the terraform output
+Example of the terraform output:
 kubernetes_cluster_host = "34.105.239.228"
 kubernetes_cluster_name = "demotechtest-312210-gke"
 project_id = "demotechtest-312210"
