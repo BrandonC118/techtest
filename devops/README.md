@@ -29,12 +29,13 @@ In your solution, include a readme containing the necessary steps to set up the 
 # Solution
 
 ## Pre-requisites
-You can use any OS you want however have not tested the deployment procedure with them, I prefered to use Google Cloud Shell to run my commands to bring up the infrastructure.
-Please ensure you have terraform and docker and access to a GCP account.
-I have already dockerised the GoLang Application shown in
+- You can use any OS you want however have not tested the deployment procedure with them, I prefered to use Google Cloud Shell to run my commands to bring up the infrastructure.
+- Please ensure you have terraform and docker and access to a GCP account.
+- I have already dockerised the GoLang Application shown in
+```
 https://hub.docker.com/repository/docker/watermellody/getground-techtest?ref=login
-
-Install/Update terraform to version  
+```
+**Install/Update terraform to version**
 ```
 which terraform
 wget https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_linux_amd64.zip
@@ -42,11 +43,11 @@ Unzip the folder and move the content to the path specified in the "which terraf
 ```
 
 	
-Create a project and keep note of the unique ID
-Enable the google apis - Compute Engine, Redis (memorystore), VPC, Kubernetes Engine
-Create a service account on IAM & Admin and create a Service Account with "Kubernetes Engine Admin" 
-Once created click on the three dots and select manage keys.
-Select "Add Key" and create a "JSON" key - keep this JSON file for later use
+- Create a project and keep note of the unique ID
+- Enable the google apis - Compute Engine, Redis (memorystore), VPC, Kubernetes Engine
+- Go into IAM & Admin and click on service accounts on the left side toolbar.
+- For the SA called - compute engine default service account click on the three dots and select manage keys.
+- Select "Add Key" and create a "JSON" key - keep this JSON file for later use
 
 ## Steps to build and run the environment
 1. log into google cloud shell and either git clone or upload the zip to google cloud shell and unzip the content
