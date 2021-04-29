@@ -24,10 +24,10 @@ spec:
           - name: PORT
             value: "443"
           - name: REDIS_HOST
-            value: ""
+            value: "CHANGE_ME_TO_REDIS_HOST"
           - name: REDIS_PORT
             value: "6379"
           - name: REDIS_PASSWORD
-            value: ""
+            value: "CHANGE_ME_TO_REDIS_PASSWORD"
           - name: REDIS_DB
             value: "0"

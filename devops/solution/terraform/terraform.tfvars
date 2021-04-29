@@ -1,4 +1,4 @@
-credentials = "${("techtest-312016-ae261796d4fa.json")}"
+credentials = "${("CHANGE_ME_TO_SA_KEY.json")}"
 project_id  = "techtest-312016"
 region      = "europe-west2"
 zone        = "c"

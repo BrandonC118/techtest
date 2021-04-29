@@ -1,5 +1,5 @@
 gcloud container clusters list
-gcloud container clusters get-credentials techtest-312016-gke --zone=europe-west2-c
+gcloud container clusters get-credentials CHANGE_ME_TO_PROJECT_ID --zone=europe-west2-c
 
 bash ./labelnodes.sh
 kubectl apply -f techtest-ns.yaml
