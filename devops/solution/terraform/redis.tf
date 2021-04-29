@@ -6,6 +6,5 @@ resource "google_redis_instance" "redis" {
   location_id        = "europe-west2-c"
   redis_version      = "REDIS_5_0"
   auth_enabled       = true
-  auth_string        = "test"
   authorized_network = google_compute_network.vpc.name
 }
