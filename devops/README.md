@@ -99,9 +99,9 @@ When bringing up the redis initially I didn't realise it was not on the same VPC
 This was fixed by explicity assigning the redis instance to the same VPC network as the rest of the stack - "<project_id>-vpc"
 
 ## If I had more time:
-I would have loved to dynamically grabbed some of the variables which need to be changed during the steps taken.
-I would have integrated Puppet or a similar configuration system to grab data and configure the infrastructure rather than having hardcoded values within the terraform folder.
-I would introduce jenkins as a CI builder as it will hold a record of build completions or failures. In addition, I would split up the building of components such as the GKE cluster and redis which will result in faster build times.
+- I would have loved to dynamically grabbed some of the variables which need to be changed during the steps taken.
+- I would have integrated Puppet or a similar configuration system to grab data and configure the infrastructure rather than having hardcoded values within the terraform folder.
+- I would introduce jenkins as a CI builder as it will hold a record of build completions or failures. In addition, I would split up the building of components such as the GKE cluster and redis which will result in faster build times.
 
 
 
